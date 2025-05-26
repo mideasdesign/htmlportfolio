@@ -1,0 +1,30 @@
+.h1{
+    font-family: 'Anta';
+    font-size: 48px;
+    weight:400;
+}
+.h2{
+    font-family: 'Josefin';
+    font-size: 32px;
+    font-weight:400;
+}
+.h3{
+    font-family: 'Josefin';
+    font-size: 24px;
+    font-weight:400;
+}
+.h4{
+    font-family: 'Josefin';
+    font-size: 18px;
+  font-weight:400;
+}
+.h5{
+    font-family: 'Anta';
+    font-size: 48px;
+   
+    font-weight:400;
+}
+p{
+    font-size: 16px;
+    font-family: 'Josefin';
+}

@@ -20,6 +20,7 @@
     --spacing: 0.25rem;
     --breakpoint-xl: 80rem;
     --container-7xl: 80rem;
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --radius-lg: 0.5rem;
@@ -29,6 +30,7 @@
     --default-mono-font-family: var(--font-mono);
     --text-sm: clamp(0.7813rem, 0.7052rem + 0.3804vw, 1rem);
     --text-base: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+    --text-lg: clamp(1.1rem, 1.1411rem + 0.2946vw, 1.4063rem);
     --text-xl: clamp(1.2rem, 1.1411rem + 0.2946vw, 1.4063rem);
     --text-2xl: clamp(1.44rem, 1.3492rem + 0.454vw, 1.7578rem);
     --text-4xl: clamp(2.0736rem, 1.8813rem + 0.9614vw, 2.7466rem);
@@ -248,9 +250,6 @@
   .w-full {
     width: 100%;
   }
-  .max-w-screen-xl {
-    max-width: var(--breakpoint-xl);
-  }
   .flex-auto {
     flex: auto;
   }
@@ -284,11 +283,11 @@
   .gap-0 {
     gap: calc(var(--spacing) * 0);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
-  }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
   }
   .space-x-1 {
     :where(& > :not(:last-child)) {
@@ -318,14 +317,8 @@
       border-color: var(--color-gray-100);
     }
   }
-  .self-center {
-    align-self: center;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
-  }
-  .rounded-4xl {
-    border-radius: var(--radius-4xl);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -346,23 +339,14 @@
   .bg-\(--secondary-color\) {
     background-color: var(--secondary-color);
   }
-  .bg-gray-50 {
-    background-color: var(--color-gray-50);
-  }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-\[url\(\.\.\/assets\/images\/ellipse25\.svg\)\] {
-    background-image: url(../assets/images/ellipse25.svg);
   }
   .bg-\[url\(\.\/assets\/images\/bg-shape\.svg\)\] {
     background-image: url(./assets/images/bg-shape.svg);
   }
   .bg-\[url\(\.\/assets\/images\/ellipse02\.svg\)\] {
     background-image: url(./assets/images/ellipse02.svg);
-  }
-  .bg-\[url\(\.\/assets\/images\/ellipse25\.svg\)\] {
-    background-image: url(./assets/images/ellipse25.svg);
   }
   .mask-\[url\(\.\/assets\/images\/bg-shape\.svg\)\] {
     mask-image: url(./assets/images/bg-shape.svg);
@@ -388,23 +372,8 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
-  }
-  .p-6 {
-    padding: calc(var(--spacing) * 6);
-  }
-  .p-7 {
-    padding: calc(var(--spacing) * 7);
-  }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
-  }
-  .p-12 {
-    padding: calc(var(--spacing) * 12);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -430,9 +399,6 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
-  .pr-8 {
-    padding-right: calc(var(--spacing) * 8);
-  }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
   }
@@ -457,6 +423,9 @@
   .text-base {
     font-size: var(--text-base);
   }
+  .text-lg {
+    font-size: var(--text-lg);
+  }
   .text-sm {
     font-size: var(--text-sm);
   }
@@ -467,10 +436,6 @@
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
-  .font-semibold {
-    --tw-font-weight: var(--font-weight-semibold);
-    font-weight: var(--font-weight-semibold);
-  }
   .whitespace-nowrap {
     white-space: nowrap;
   }
@@ -479,6 +444,9 @@
   }
   .text-\(--accent-color\) {
     color: var(--accent-color);
+  }
+  .text-\(--primary-color\) {
+    color: var(--primary-color);
   }
   .text-\(--secondary-color\) {
     color: var(--secondary-color);
@@ -602,11 +570,6 @@
       border-width: 0px;
     }
   }
-  .md\:bg-white {
-    @media (width >= 48rem) {
-      background-color: var(--color-white);
-    }
-  }
   .md\:p-0 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 0);
@@ -619,11 +582,6 @@
       }
     }
   }
-  .dark\:border-gray-700 {
-    @media (prefers-color-scheme: dark) {
-      border-color: var(--color-gray-700);
-    }
-  }
   .dark\:bg-\(--secondary-color\) {
     @media (prefers-color-scheme: dark) {
       background-color: var(--secondary-color);
@@ -632,16 +590,6 @@
   .dark\:bg-gray-700 {
     @media (prefers-color-scheme: dark) {
       background-color: var(--color-gray-700);
-    }
-  }
-  .dark\:bg-gray-800 {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-gray-800);
-    }
-  }
-  .dark\:bg-gray-900 {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-gray-900);
     }
   }
   .dark\:text-gray-400 {
@@ -685,13 +633,6 @@
     @media (prefers-color-scheme: dark) {
       &:focus {
         --tw-ring-color: var(--color-gray-600);
-      }
-    }
-  }
-  .md\:dark\:bg-gray-900 {
-    @media (width >= 48rem) {
-      @media (prefers-color-scheme: dark) {
-        background-color: var(--color-gray-900);
       }
     }
   }

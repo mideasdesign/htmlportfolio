@@ -60,7 +60,7 @@
   --text-xs: clamp(0.5425rem, 0.5086rem + 0.1695vw, 0.64rem);
   --text-sm: clamp(0.7813rem, 0.7052rem + 0.3804vw, 1rem);
   --text-base:clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
-  --text-lg: clamp(1.2rem, 1.1411rem + 0.2946vw, 1.4063rem);
+  --text-lg: clamp(1.1rem, 1.1411rem + 0.2946vw, 1.4063rem);
 
 --text-xl:clamp(1.2rem, 1.1411rem + 0.2946vw, 1.4063rem);
 --text-2xl:clamp(1.44rem, 1.3492rem + 0.454vw, 1.7578rem);

@@ -1,3 +1,5 @@
+/* mobile */
+
 .h1{
     font-family: 'Anta';
     font-size: 48px;
@@ -27,4 +29,46 @@
 p{
     font-size: 16px;
     font-family: 'Josefin';
+}
+
+.box_background{
+    color:#2D383F;
+}
+.light-gray{
+    color: #7DABC5;
+}
+
+ /* Desktop  */
+ .h1{
+    font-family: 'Anta';
+    font-size: 88px;
+    font-weight:400;
+}
+.h2{
+    font-family: 'Josefin';
+    font-size: 60px;
+    font-weight:400;
+}
+.h3{
+    font-family: 'Josefin';
+    font-size: 40px;
+    font-weight:400;
+}
+.h4{
+    font-family: 'Josefin';
+    font-size: 30px;
+  font-weight:400;
+}
+nav{
+    font-family: 'Josefin';
+    font-size: 26px;
+   
+    font-weight:400;
+}
+p{
+    font-size: 18px;
+    font-family: 'Josefin';
+}
+section{
+    margin:52px 0;
 }

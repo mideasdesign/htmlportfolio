@@ -55,7 +55,7 @@
   src: url('./assets/fonts/anta-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 @theme{
-
+  --font-display: 'Josefin Sans', 'sans';
   --text-*:initial;  
   --text-xs: clamp(0.5425rem, 0.5086rem + 0.1695vw, 0.64rem);
   --text-sm: clamp(0.7813rem, 0.7052rem + 0.3804vw, 1rem);
@@ -98,7 +98,7 @@
   --base-color: #FFFDFD;
   --light-gray:#7DABC5;
   --dark-gray: #2D383F;
-  --font-display: 'Josefin Sans';
+  --font-primary: 'Josefin Sans';
   --font-heading: 'Anta';
   --grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }

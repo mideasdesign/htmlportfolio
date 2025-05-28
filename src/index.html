@@ -5,6 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
+    <script src="./assets/js/tab.js"></script>
 </head>
 <body class="font-display text-base">
     <div class="bg-(--primary-color) text-base text-gray-200">
@@ -75,11 +76,11 @@
     <!-- #region Hero Section -->
     <header class="relative flex justify-center py-16 sm:py-20 px-6 overflow-hidden">
         <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-full max-w-4xl h-full bg-[url('./assets/images/bg-shape.svg')] bg-contain bg-center bg-no-repeat opacity-20"></div>
+            <div class="w-full max-w-4xl h-full bg-[url('./assets/images/bg-shape.svg')] bg-contain bg-center bg-no-repeat "></div>
         </div>
         <div class="relative max-w-7xl w-full text-center z-10">
             <div class="flex flex-col items-center">
-                <div class="w-64 h-64 sm:w-80 sm:h-80 mb-8 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg">
+                <div class="">
                     <img 
                         src="./assets/images/person.png" 
                         alt="Markus Fischer" 
@@ -88,7 +89,7 @@
                     >
                 </div>
                 <div class="space-y-4">
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold ">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold font-heading text-(--accent-color)">
                         Markus Fischer
                     </h1>
                     <h2 class="text-xl sm:text-2xl font-medium text-blue-300 uppercase tracking-wider">
@@ -144,23 +145,36 @@
         </section>
         <!-- #endregion -->
     <!-- #region Projects -->
-        <section class=" flex justify-center py-11 sm:py-12">
-            <div class="tab-nav-container sm:max-w-7xl flex">
-                <div class="tab active purple">
-                    <i class="fas fa-home"></i>
-                    <p>Home</p>
-                </div>
-                <div class="tab pink">
-                    <i class="far fa-heart"></i>
-                    <p>Likes</p>
-                </div>
-                <div class="tab yellow">
-                    <i class="fas fa-search"></i>
-                    <p>Search</p>
-                </div>
-                <div class="tab teal">
-                    <i class="far fa-user"></i>
-                    <p>Profile</p>
+        <section class="py-12">
+            <div class="mx-auto max-w-7xl">
+                <button class="hover:bg-gray-700 hover:rounded-t-3xl p-4 text-(--secondary-color) min-w-36" onclick="openProject('join')">1. Join</button>
+                <button class="hover:bg-gray-700 hover:rounded-t-3xl p-4 text-(--secondary-color) mx-4 min-w-36" onclick="openProject('elpollo')">2. ElPollo Loco</button>
+                <button class="hover:bg-gray-700 hover:rounded-t-3xl p-4 text-(--secondary-color) min-w-36" onclick="openProject('bubble')">3. Da Bubble</button>
+                
+
+            </div>
+            <div class=" bg-gray-700">
+                <div class="mx-auto max-w-7xl bg-gray-700">
+                    <div id="join" class="p-8">
+                        <h2>Join</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis aliquid, quisquam eaque quidem laboriosam libero hic, dolore officiis reprehenderit iste? Eum harum odit reprehenderit perferendis exercitationem alias. Sequi, laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis aliquid, quisquam eaque quidem laboriosam libero hic, dolore officiis reprehenderit iste? Eum harum odit reprehenderit perferendis exercitationem alias. Sequi, laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis aliquid, quisquam eaque quidem laboriosam libero hic, dolore officiis reprehenderit iste? Eum harum odit reprehenderit perferendis exercitationem alias. Sequi, laudantium.</p>
+                    </div>
+
+                    <div id="elpollo" class="mx-w-7xl p-8" style="display:none">
+                        <h2>El Pollo Loco</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis aliquid, quisquam eaque quidem laboriosam libero hic, dolore officiis reprehenderit iste? Eum harum odit reprehenderit perferendis exercitationem alias. Sequi, laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis aliquid, quisquam eaque quidem laboriosam libero hic, dolore officiis reprehenderit iste? Eum harum odit reprehenderit perferendis exercitationem alias. Sequi, laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis aliquid, quisquam eaque quidem laboriosam libero hic, dolore officiis reprehenderit iste? Eum harum odit reprehenderit perferendis exercitationem alias. Sequi, laudantium.</p>
+                    </div>
+
+                    <div id="bubble" class="mx-w7xl p-8" style="display:none">
+                        <h2>Da Bubble</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis aliquid, quisquam eaque quidem laboriosam libero hic, dolore officiis reprehenderit iste? Eum harum odit reprehenderit perferendis exercitationem alias. Sequi, laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis aliquid, quisquam eaque quidem laboriosam libero hic, dolore officiis reprehenderit iste? Eum harum odit reprehenderit perferendis exercitationem alias. Sequi, laudantium.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nobis aliquid, quisquam eaque quidem laboriosam libero hic, dolore officiis reprehenderit iste? Eum harum odit reprehenderit perferendis exercitationem alias. Sequi, laudantium.</p>
+                    </div>
                 </div>
             </div>
         </section>

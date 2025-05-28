@@ -55,27 +55,32 @@
     </nav>
     <!-- #endregion -->
     <!-- #region Hero Section -->
-    <header class="relative flex justify-center py-16 sm:py-20 px-6 overflow-hidden order-2 sm:order-1">
-        <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-full max-w-4xl h-full bg-[url('./assets/images/bg-shape.svg')] bg-contain bg-center bg-no-repeat "></div>
-        </div>
-        <div class="relative max-w-7xl w-full text-center z-10">
-            <div class="flex flex-col items-center">
-                <div class="">
-                    <img 
-                        src="./assets/images/person.png" 
-                        alt="Markus Fischer" 
-                        class="w-full h-full object-cover"
-                        loading="eager"
-                    >
+    <header class="relative pt-16 px-6 overflow-hidden">
+        <div class=" max-w-7xl auto-grid mx-auto text-center z-40">
+            <div class="mask-[url(./assets/images/bg-shape.svg)] mask-no-repeat mask-top mask-contain">
+                <img src="./assets/images/person.png" alt="Markus Fischer" class="bg-[url(./assets/images/bg-shape.svg)] bg-no-repeat bg-contain bg-top">
+            </div>
+            <div class="grid grid-cols-1 mt-6 content-center-safe place-content-center-safe">
+                <div class="flex flex-wrap justify-center max-h-20">
+                    <a href="#">
+                        <img src="./assets/images/logo.svg" class="min-h-10" alt="Logo Markus Fischer" />
+                    </a>
                 </div>
-                <div class="space-y-4">
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold font-heading text-(--accent-color)">
+                <div class="">
+                    <h1 class="text-4xl/6 md:text-7xl/20  font-heading text-(--accent-color) my-(--space-xs-s)">
                         Markus Fischer
                     </h1>
-                    <h2 class="text-xl sm:text-2xl font-medium text-blue-300 uppercase tracking-wider">
+                    <h2 class="text-xl sm:text-2xl text-(--accent-color) uppercase tracking-wider">
                         Frontend Developer
                     </h2>
+                </div>
+                <div class="h-32 flex flex-wrap justify-center gap-4">
+                    <a href="#">
+                        <img src="./assets/images/icons/icon-github/github-light.svg" alt="">
+                    </a>
+                    <a href="#" class="h-32">
+                        <img src="./assets/images/icons/icon-github/github-light.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>

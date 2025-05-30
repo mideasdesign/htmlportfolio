@@ -56,8 +56,8 @@
     <!-- #endregion -->
     <!-- #region Hero Section -->
     <header class="relative pt-16 px-6 overflow-hidden">
-        <div class=" max-w-7xl auto-grid mx-auto text-center z-40">
-            <div class="mask-[url(./assets/images/ellipse35.svg)] mask-no-repeat mask-top mask-contain sm:mask-none">
+        <div class=" max-w-7xl big-grid mx-auto text-center z-40">
+            <div class="">
                 <img src="./assets/images/person.png" alt="Markus Fischer" class="bg-[url(./assets/images/ellipse35.svg)] bg-no-repeat bg-contain bg-center sm: bg-transparent">
             </div>
             <div class="grid grid-cols-1 mt-6 content-center-safe place-content-center-safe">
@@ -76,10 +76,13 @@
                 </div>
                 <div class="h-32 flex flex-wrap justify-center gap-4">
                     <a href="#">
-                        <img src="./assets/images/icons/icon-github/github-light.svg" alt="">
+                        <img src="./assets/images/icons/icon-github/github-light.svg" class="h-7" alt="">
                     </a>
-                    <a href="#" class="h-32">
-                        <img src="./assets/images/icons/icon-github/github-light.svg" alt="">
+                    <a href="#">
+                        <img src="./assets/images/icons/icon-mail/mail-light.svg" class="h-7" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/images/icons/icons-linkedin/linkedin-light.svg" class="h-7" alt="">
                     </a>
                 </div>
             </div>
@@ -130,41 +133,44 @@
     </nav>
     <!-- #endregion -->
     <!-- #region Main Content -->
-    <main class="py-6 sm:py-12 ">
-        <section id="why-me" class="px-6 md:px-8 py-6 sm:py-12 ">
+    <main class="py-6 sm:py-12" id="why-me">
+        <section class="px-6 md:px-8 py-6 sm:py-12 ">
             <div class="mx-auto max-w-7xl">
                 <h2 class="text-4xl font-bold text-center font-heading text-(--secondary-color) mb-12">Why Me</h2>
-                <div class="grid auto-grid items-center">
+                <div class="big-grid items-center">
+                    <div>
                         <div>
                             <img src="./assets/images/icons/misc/location.svg" class="inline-block" alt=""> 
-                            <span class="text-2xl"> <span class="text-(--secondary-color)"> I'm </span>located in Wiesbaden</span>
                         </div>
                         <div>
-                            <p class="text-base leading-relaxed">
-                                I'm a passionate and dedicated frontend developer with a keen eye for design and a commitment to creating seamless user experiences. With a strong foundation in modern web technologies, I bring ideas to life through clean, efficient, and responsive code.
-                            </p>                        
+                            <span class="text-2xl"> <span class="text-(--secondary-color)"> I'm </span>located in Wiesbaden</span>
                         </div>
+                    </div>
+                    <div>
+                        <p class="text-base leading-relaxed">
+                            I'm a passionate and dedicated frontend developer with a keen eye for design and a commitment to creating seamless user experiences. With a strong foundation in modern web technologies, I bring ideas to life through clean, efficient, and responsive code.
+                        </p>                        
+                    </div>
                 </div>
             </div>
         </section>
     <!-- #region Skills Section -->
-        <section class="py-6 sm:py-12  px-6 md:px-8">
+        <section class="py-6 sm:py-12  px-6 md:px-8" id="skills">
             <div class="mx-auto max-w-7xl">
                 <h3 class="text-4xl text-(--secondary-color) text-center font-heading pb-8">My Skills</h3>
-                <div class="grid auto-grid items-center">
-                    <div class="items-center grid grid-flow-col gap-3 sm:pr-12">
-                        <img src="./assets/images/icons/icon-skills/css.svg" alt="">
-                        <img src="./assets/images/icons/icon-skills/html.svg" alt="">
-                        <img src="./assets/images/icons/icon-skills/javasript.svg" alt="">
-                        <img src="./assets/images/icons/icon-skills/typescript.svg" alt="">
-                        <img src="./assets/images/icons/icon-skills/angular.svg" alt="">
-                        <img src="./assets/images/icons/icon-skills/firebase.svg" alt="">
-                        <img src="./assets/images/icons/icon-skills/restapi.svg" alt="">
-                        <img src="./assets/images/icons/icon-skills/materialdesign.svg" alt="">
+                <div class="big-grid">
+                    <div class="mx-auto flex flex-wrap gap-3 w-full">
+                        <img src="./assets/images/icons/icon-skills/css.svg" class="h-20" alt="">
+                        <img src="./assets/images/icons/icon-skills/html.svg" class="h-20" alt="">
+                        <img src="./assets/images/icons/icon-skills/javasript.svg" class="h-20" alt="">
+                        <img src="./assets/images/icons/icon-skills/typescript.svg" class="h-20" alt="">
+                        <img src="./assets/images/icons/icon-skills/angular.svg" class="h-20" alt="">
+                        <img src="./assets/images/icons/icon-skills/firebase.svg" class="h-20" alt="">
+                        <img src="./assets/images/icons/icon-skills/restapi.svg" class="h-20" alt="">
                     </div>
-                    <div>
-                        <span>i#m working on</span>
-                        <img src="" alt="">
+                    <div class="pt-6 sm-pl-7">
+                        <h5 class="text-lg pb-5">i#m working on</h5>
+                         <img src="./assets/images/icons/icon-skills/css.svg" class="h-17 pb-4" alt="">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, facilis possimus? 
                         </p>
@@ -174,7 +180,7 @@
         </section>
         <!-- #endregion -->
     <!-- #region Projects -->
-        <section class="py-6 sm:py-12 ">
+        <section class="py-6 sm:py-12" id="projects">
             <div class="mx-auto max-w-7xl">
                 <button class="hover:bg-gray-700 hover:rounded-t-3xl p2 sm:p-4 text-(--secondary-color) min-w-17" onclick="openProject('join')">1. Join</button>
                 <button class="hover:bg-gray-700 hover:rounded-t-3xl p2 sm:p-4 text-(--secondary-color) mr-3 sm:mx-4 min-w-17" onclick="openProject('elpollo')">2. ElPollo Loco</button>
@@ -209,7 +215,7 @@
         </section>
         <!-- #endregion -->
     <!-- #region Testimonial Section -->
-        <section id="testimonials" class="py-6 sm:py-12 ">
+        <section id="testimonials" class="py-6 sm:py-12">
             <div class="mx-auto max-w-7xl px-6 md:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold font-heading mb-4 text-(--secondary-color)">Need a Team Player?</h2>

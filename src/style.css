@@ -100,13 +100,17 @@
   --dark-gray: #2D383F;
   --font-primary: 'Josefin Sans';
   --font-heading: 'Anta';
-  --grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  --grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
 }
 
   p{
     color: #F8F5EC;
   }
-  .auto-grid{
+  .small-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  }
+    .big-grid{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }

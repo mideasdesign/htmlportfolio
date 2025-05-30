@@ -55,6 +55,12 @@
   src: url('./assets/fonts/anta-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 @theme{
+  input,
+  button,
+  select,
+  textarea{
+    font:inherit;
+  }
   --font-display: 'Josefin Sans', 'sans';
   --text-*:initial;  
   --text-xs: clamp(0.5425rem, 0.5086rem + 0.1695vw, 0.64rem);

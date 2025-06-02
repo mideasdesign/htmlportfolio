@@ -11,44 +11,33 @@
     <div class="bg-(--primary-color) text-base text-gray-200">
     <!-- #region mobile Nav Section-->
     <nav class="bg-(--secondary-color) sticky top-0 z-50 mx-auto sm:hidden">
-        <div class="max-w-7xl flex flex-wrap items-center justify-between p-4 mx-auto">
-            <a href="#" class="flex items-center space-x-3">
+        <div class=" max-w-7xl flex sm:items-center justify-between p-4 mx-auto">
+            <a href="#" class="flex justify-center items-center">
                 <img src="./assets/images/logo.svg" class="h-8" alt="Logo Markus Fischer" />
-                <span class="text-base font-light text-gray-900">Markus Fischer</span>
             </a>
-            <div class="flex items-center md:order-2">
-                <button type="button" data-dropdown-toggle="language-dropdown-menu" class="iinline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-700 rounded-lg 
-                border border-(--secondary-color) hover:bg-[url(./assets/images/)] transition-colors">
-                    DE
-                </button>
-                <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-700 rounded-lg 
-                border border-(--secondary-color) hover:border-(--primary-color) transition-colors">
-                    EN
-                </button>
-                <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 aria-controls="navbar-language" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                    </svg>
-                </button>
+            <div class="flex items-center  justify-between mt-5">
+                <div>
+                    <button type="button" data-dropdown-toggle="language-dropdown-menu" class="iinline-flex items-center font-medium justify-center px-2 py-2 text-sm text-gray-700 rounded-lg 
+                    border border-(--secondary-color) hover:bg-[url(./assets/images/)] transition-colors">
+                        DE
+                    </button>
+                    <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-2 py-2 text-sm text-gray-700 rounded-lg 
+                    border border-(--secondary-color) hover:border-(--primary-color) transition-colors">
+                        EN
+                    </button>
+                </div>
+                <div onclick="burgermenu()" class="burger ">
+                <div class="layers"></div>
+                <div class="layers"></div>
+                <div class="layers"></div>
+                </div>
             </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
-                <ul class="flex flex-col p-4 md:p-0 mt-4 border  rounded-lg  md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent bg-gray-800  border-gray-700">
-                    <li>
-                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0" aria-current="page">Home</a>
-                    </li>
-                    <li>
-                        <a href="#why-me" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0">Why me</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0">Contact</a>
-                    </li>
+            <div id="togglemenu" class="menu hidden">
+                <ul class=" w-[17rem] mx-auto bg-[url(./assets/images/ellipse35.svg)] bg-no-repeat bg-cover bg-center py-8 px-5">
+                    <li class="py-4 text-center"><a href="#why-me" class=" text-center text-gray-900  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0">Why me</a></li>
+                    <li class="py-4 text-center"><a href="#skills" class=" text-center text-gray-900  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0">Skills</a></li>
+                    <li class="py-4 text-center"><a href="#projects" class=" text-center text-gray-900  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0">Projects</a></li>
+                    <li class="py-4 text-center"><a href="#contact" class=" text-center text-gray-900  rounded hover:bg-gray-100 md:hover:bg-transparent  md:p-0">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -91,24 +80,25 @@
     <!-- #endregion -->
     <!-- #region Nav Section-->
     <nav class="bg-(--secondary-color) sticky top-0 z-50 mx-auto hidden sm:block">
-        <div class="max-w-7xl flex flex-wrap items-center justify-between p-4 mx-auto">
-            <a href="#" class="flex items-center space-x-3">
+        <div class="max-w-7xl flex flex-wrap items-center justify-center sm:justify-between p-4 mx-auto">
+            <a href="#" class="flex items-center">
                 <img src="./assets/images/logo.svg" class="h-8" alt="Logo Markus Fischer" />
                 <span class="text-lg font-light text-gray-700">markus fischer</span>
             </a>
-            <div class="flex items-center md:order-2 space-x-2">
-                <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center justify-center py-4 px-4 text-sm text-gray-700 hover:bg-[url(./assets/images/ellipse24.svg)] hover:cursor-pointer hover:text-(--accent-color) bg-no-repeat bg-center transition-colors">
+            <div class="flex items-center md:order-2">
+                <button type="button" data-dropdown-toggle="language-dropdown-menu" class="iinline-flex items-center font-medium justify-center px-2 py-2 text-sm text-gray-700 rounded-lg 
+                border border-(--secondary-color) hover:bg-[url(./assets/images/)] transition-colors">
                     DE
                 </button>
-                <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center justify-center py-4 px-4 text-sm text-gray-700 hover:bg-[url(./assets/images/ellipse24.svg)] hover:cursor-pointer hover:text-(--accent-color) bg-no-repeat bg-center transition-colors">
+                <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-2 py-2 text-sm text-gray-700 rounded-lg 
+                border border-(--secondary-color) hover:border-(--primary-color) transition-colors">
                     EN
                 </button>
-                <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10  aria-controls="navbar-language" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 17 14" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                    </svg>
-                </button>
+                <div onclick="burgermenu()" class="burger">
+                <div class="layers"></div>
+                <div class="layers"></div>
+                <div class="layers"></div>
+                </div>
             </div>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
                 <ul class="flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent bg-gray-800  border-gray-700">

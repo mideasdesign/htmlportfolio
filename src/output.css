@@ -26,6 +26,7 @@
     --tracking-wider: 0.05em;
     --leading-relaxed: 1.625;
     --radius-lg: 0.5rem;
+    --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -238,6 +239,9 @@
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -252,6 +256,9 @@
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
+  }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
   }
   .block {
     display: block;
@@ -383,6 +390,9 @@
   }
   .rounded {
     border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -549,6 +559,9 @@
   .text-\(--accent-color\) {
     color: var(--accent-color);
   }
+  .text-\(--primary-color\) {
+    color: var(--primary-color);
+  }
   .text-\(--secondary-color\) {
     color: var(--secondary-color);
   }
@@ -626,6 +639,13 @@
       }
     }
   }
+  .hover\:bg-transparent {
+    &:hover {
+      @media (hover: hover) {
+        background-color: transparent;
+      }
+    }
+  }
   .hover\:bg-\[url\(\.\/assets\/images\/\)\] {
     &:hover {
       @media (hover: hover) {
@@ -637,6 +657,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--accent-color);
+      }
+    }
+  }
+  .hover\:text-\(--primary-color\) {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--primary-color);
       }
     }
   }
